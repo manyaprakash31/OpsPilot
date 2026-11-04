@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: #F3F0E8;
+  --color-paper-surface: #FAF8F5;
+  --color-paper-card: #FFFFFF;
+  --color-paper-hover: #ECE8DE;
+  --color-paper-border: #D8D4C8;
+  --color-paper-line: #E2DEC6;
+  
+  --color-ink: #202622;
+  --color-ink-muted: #4F5B54;
+  --color-ink-faint: #7E8B84;
+  --color-ink-subtle: #A8B3AC;
+
+  --color-sage: #78836B;
+  --color-sage-light: #E9EDE6;
+  --color-sage-dark: #56604D;
+
+  --color-accent: #C76542;
+  --color-accent-hover: #B25433;
+  --color-accent-faint: #FAF1ED;
+  --color-accent-border: #E8A389;
+
+  --color-critical: #A32D1C;
+  --color-warning: #C76542;
+  --color-success: #3A6346;
+  --color-info: #3D5A6C;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-paper-border);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-subtle);
+}
+
+/* Subtle Editorial Grid & Ledger styling */
+.editorial-border {
+  border: 1px solid var(--color-paper-border);
+}
+.editorial-border-b {
+  border-bottom: 1px solid var(--color-paper-border);
+}
+.editorial-border-r {
+  border-right: 1px solid var(--color-paper-border);
+}
+
+/* Tabular figures for numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
